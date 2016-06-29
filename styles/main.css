@@ -1,5 +1,6 @@
 body {
-  background: #fff url("../images/sayagata-400px.png") repeat center center;
+  background: #222 url("../images/dark_embroidery.png") repeat center center;
+  background: ;
   font-size: 16px;
   color: #333;
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
@@ -11,11 +12,14 @@ body {
   margin: 0 auto;
 }
 
+.black-butte-porter {
+  font-size: 2.5em;
+  color: #eee;
+  margin: 1em .5em;
+}
+
 .forbidden-lavender {
   padding: 1.5em 2.5em;
   background: #fff;
-}
-
-.black-butte-porter {
-  font-size: 2.5em;
+  border-radius: 2px;
 }
