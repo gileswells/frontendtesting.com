@@ -23,3 +23,11 @@ body {
   background: #fff;
   border-radius: 2px;
 }
+
+.shiner-bock {
+  border: 1px solid #333;
+  border-width: 1px 0;
+  padding: 0 1em 1em;
+  margin : 2.5em -.5em;
+  background: #fafafa;
+}
