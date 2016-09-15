@@ -1,9 +1,11 @@
 body {
-  background: #222 url("../images/dark_embroidery.png") repeat center center;
-  background: ;
+  background: #222 url("../images/eight_horns.png") repeat center center;
   font-size: 16px;
   color: #333;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -14,6 +16,77 @@ a:focus {
   color: #007AB5;
 }
 
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: #5D737E;
+  border-bottom: 1px solid #fff;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+.top-menu .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 50em;
+  margin: 0 auto;
+}
+.top-menu h1 {
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: normal;
+  color: #FCF7FF;
+  flex: 1 0 auto;
+}
+.top-menu a {
+  flex: 1 0 auto;
+  padding: 5px 10px;
+  color: #e1e1e2;
+  text-decoration: none;
+  text-align: center;
+}
+@media only screen and (max-width: 40em) {
+  .top-menu {
+    position: relative;
+    margin: 0;
+    padding: 0 0 4px;
+  }
+  .top-menu h1 {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #fff;
+  }
+  .top-menu a {
+    display: inline-block;
+    padding: 4px 0;
+  }
+}
+
+.top-menu a:hover,
+.top-menu a:focus {
+  color: #f7f8f8;
+}
+.top-menu .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 1px;
+  margin-top: -2px;
+}
+
+
+
 .firemans-4 {
   max-width: 50em;
   width: 95%;
@@ -21,34 +94,70 @@ a:focus {
 }
 
 .black-butte-porter {
-  font-size: 2.5em;
-  color: #eee;
-  margin: 1em .5em;
+  font-size: 3em;
+  color: #404E4D;
+  margin: 1.5em .5em 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  text-shadow: 0 0 2px #fff;
+  text-align: center;
 }
 
-.bat-outta-helles {
-  border-bottom: 1px solid #333;
-  padding: 2em 3em 1.5em;
-  background: #E8ECF1;
-  border-radius: 2px 2px 0 0;
+@media only screen and (max-width: 40em) {
+  .black-butte-porter {
+    margin-top: .5em;
+  }
 }
-.bat-outta-helles h2 {
-  margin: 0 0 .5em;
-}
-.bat-outta-helles p {
-  margin: 0;
+
+.butt {
+  text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
 }
 
 .forbidden-lavender {
-  padding: 1.5em 2.5em;
-  background: #fff;
-  border-radius: 0 0 2px 2px;
+  padding: 2em;
+  background: #FCFCFC;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(135,140,143,0.41);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(135,140,143,0.41);
+  box-shadow: 0px 0px 26px 0px rgba(135,140,143,0.41);
+  line-height: 1.4em;
 }
 
-.shiner-bock {
-  border: 1px solid #333;
-  border-width: 1px 0;
-  padding: 0 1em 1em;
-  margin : 2.5em -.5em;
-  background: #fafafa;
+.forbidden-lavender h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  color: #404E4D;
+  margin-top: 2em;
+}
+.forbidden-lavender h2:first-child {
+  margin-top: 0;
+}
+.forbidden-lavender h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  color: #5D737E;
+}
+
+blockquote {
+  background: #f7f8f8;
+  border-left: 10px solid #5D737E;
+  margin: 0 0 1.5em;
+  padding: 0.5em 10px;
+  position: relative;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+blockquote p {
+  margin: 0 0 .5em;
+}
+blockquote cite {
+  color: #aaa;
+  display: block;
+  font-size: .9em;
+}
+blockquote cite a {
+  color: currentColor;
+}
+
+.footer {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  margin: 2em 0;
+  color: #5D737E;
+  font-size: .9em;
 }
